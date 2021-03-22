@@ -1,0 +1,52 @@
+.localisation{
+    font-family: 'Roboto-Bold', sans-serif;
+    display: flex;
+    background-color: #f3f3f3;
+    justify-content: center;
+    font-size: 1.1em;
+    position: relative;
+    padding: 20px;
+        &.__icon{
+            margin-right: 250px;
+        }
+        &_texte{
+            font-weight: 400;
+        }
+}
+
+.intro{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding: 1em;
+    background-color: #fafafa;
+    &__h2{
+        font-family: 'Roboto-Bold', sans-serif;
+    }
+}
+
+.restaurants{
+    background-color: #ecefed;
+    width: 100%;
+    padding: 30px;
+}
+
+.cartes1, .cartes2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.cartes_resto{
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cartes_resto img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}

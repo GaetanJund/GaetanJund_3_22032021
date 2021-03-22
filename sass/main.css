@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+  background-color: black;
+}
+
+footer .logo_footer {
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 500;
+  margin-left: 38px;
+  position: relative;
+  color: white;
+}
+
+li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+.localisation {
+  font-family: 'Roboto-Bold', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f3f3f3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1em;
+  position: relative;
+  padding: 20px;
+}
+
+.localisationicon {
+  margin-right: 250px;
+}
+
+.localisation_texte {
+  font-weight: 400;
+}
+
+.intro {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 1em;
+  background-color: #fafafa;
+}
+
+.introh2 {
+  font-family: 'Roboto-Bold', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

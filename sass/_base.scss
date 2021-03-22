@@ -1,0 +1,51 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    padding: 10px;
+    background-color: black;
+}
+
+li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.logo_footer{    
+    display: grid;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+    margin-left: 38px;
+    position: relative;
+    color: white;
+}

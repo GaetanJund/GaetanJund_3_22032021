@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 OCR",
+  "main": "index.js",
+
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaetanJund/GaetanJund_3_22032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaetanJund/GaetanJund_3_22032021/issues"
+  },
+  "homepage": "https://github.com/GaetanJund/GaetanJund_3_22032021#readme"
+}
