@@ -6,47 +6,133 @@
     font-size: 1.1em;
     position: relative;
     padding: 20px;
-        &.__icon{
-            margin-right: 250px;
-        }
-        &_texte{
-            font-weight: 400;
-        }
+    &_icon{
+        margin-right: 5px;
+    }
+    &texte{
+        font-weight: 500;
+    }
 }
 
 .intro{
     display: grid;
-    justify-content: center;
     position: relative;
-    padding: 1em;
+    text-align: center;
+    justify-items: center;
     background-color: #fafafa;
-    &__h2{
-        font-family: 'Roboto-Bold', sans-serif;
+    &_texte{
+        margin-top: -15px;
+    }
+    &_lien{
+        width: 200px;
+        height: 30px;
+        background-color: #686868;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        transition-duration: 0.35s;
+        text-decoration: none;
+        color: white;
+        padding-top: 10px;
+        margin-bottom: 50px;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    &_lien:hover{
+        background-color: #fff;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    }
+    }
+}
+
+.tuto{
+    margin-left: 25px;
+    margin-bottom: 50px;
+    &_btn{
+        width: 100%;
+    }
+    &_case{
+        counter-reset: listeCompte;
+    }
+    &_list{
+        width: 100%;
+        height: 35px;
+        margin-left: -35px;
+        margin-bottom: 15px;
+        padding-top: 1em;
+        background-color: #faf3f3e3;
+        list-style: none;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+    }
+    &_list::before{
+        display: flex;
+        content: counter(listeCompte) "";
+        counter-increment: listeCompte 1;
+        color: white;
+        background-color: $color-primary;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 20px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    &_icon{
+        color: grey;
+        padding-left: 30px;
+    }
+    &_texte{
+        padding-left: 20px;
     }
 }
 
 .restaurants{
-    background-color: #ecefed;
-    width: 100%;
+    background-color: #faf3f3e3;
     padding: 30px;
+    position: relative;
 }
 
-.cartes1, .cartes2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
-.cartes_resto{
-    background-color: white;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.cartes_resto img{
+.resto{
     width: 100%;
-    height: 200px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
+    &_cartes{
+        display: block;
+        width: 100%;
+        height: 220px;
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 20px 20px 20px 20px;
+        text-decoration: none;
+        color: black;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%); 
+    }
+    &_image{
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+    &_new{
+        position: absolute;
+        background-color: $color-tertiary;
+        color: green;
+        padding: 5px;
+        margin-left: -80px;
+        margin-top: 10px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    &_texte{
+        position: relative;
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+    &_texte p{
+        margin-top: -10px;
+    }
+    &_icon{
+        position: absolute;
+        font-size: 27px;
+        margin-left: 270px;
+        margin-top: -45px;
+    }
+    .fa-heart:hover{
+        color:$color-primary;
+    }
 }

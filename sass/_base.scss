@@ -11,41 +11,68 @@ header{
     display: flex;
     justify-content: center;
     position: relative;
+    padding: 5px;
 }
 
 h1{
     font-family: 'Shrikhand', cursive;
     margin: 0;
+    position: relative;
 }
 
 h2{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 h3{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    position: relative;
 }
 
-footer{
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-bottom: 2px solid $color-tertiary;
+    width: 11%;
+}
+
+h5{
+    font-size: 1em;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+
+.footer{
     font-family: 'Roboto', sans-serif;
     display: grid;
     padding: 10px;
     background-color: black;
-}
-
-li a{
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-}
-
-.logo_footer{    
+    &_logo{
     display: grid;
     font-family: 'Shrikhand', cursive;
-    font-weight: 500;
-    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.25em;
+    margin-left: 10px;
     position: relative;
     color: white;
+    }
+    &_lien{
+    list-style-type: none;
+    text-decoration: none;
+    color: white; 
+    margin-left: -30px;    
+    }
+}
+
+.fa-hands-helping{
+    margin-right: 5px;
+}
+
+.fa-utensils{
+    margin-right: 12px;
 }

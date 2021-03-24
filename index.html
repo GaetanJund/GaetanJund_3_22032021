@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./sass/main.css">
+    <link rel="stylesheet" type="text/css" href="./.public/css/style.css">
     <link rel="icon" type="images/png" sizes="16x16" href="images/logo/ohmyfood@2x.svg">
     <script src="https://kit.fontawesome.com/0583f76495.js" crossorigin="anonymous"></script>
     <title>OhMyFood</title>
@@ -22,82 +22,88 @@
 
         <section class="localisation">
                 <i class="fas fa-map-marker-alt localisation_icon"></i>
-                <span class="localisation_texte">Paris, Belleville</span>
+                <span class="localisation_texte">Paris,Belleville</span>
         </section>
 
         <section class="intro">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#">Explorer nos restaurants</a>
+            <h2>Réservez le menu qui <br/> vous convient</h2>
+            <p class="intro_texte">Découvrez des restaurants d'exception, <br/> sélectionnés par nos soins.</p>
+            <a href="#" class="intro_lien">Explorer nos restaurants</a>
         </section>
 
         <section class="tuto">
-            <div id="texte_tuto">
+            <div>
                 <h2>Fonctionnement</h2>
             </div>
-            <div id="btn_tuto">
-                <ul id="case">
-                    <li>
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Choisissez votre restaurant</h3>
+            <div id="tuto_btn">
+                <ol class="tuto_case">
+                    <li class="tuto_list">
+                        <i class="fas fa-mobile-alt tuto_icon"></i>
+                        <span class="tuto_texte">Choisissez votre restaurant</span>
                     </li>
-                </ul>
-                <ul id="case">
-                    <li>
-                        <i class="fas fa-list-ul"></i>
-                        <h3>Composez votre menu</h3>
+                    <li class="tuto_list">
+                        <i class="fas fa-list-ul tuto_icon"></i>
+                        <span class="tuto_texte">Composez votre menu</span>
                     </li>
-                </ul>
-                <ul id="case">
-                    <li>
-                        <i class="fas fa-store"></i>
-                        <h3>Dégustez au restaurant</h3>
+                    <li class="tuto_list">
+                        <i class="fas fa-store tuto_icon"></i>
+                        <span class="tuto_texte">Dégustez au restaurant</span>
                     </li>
-                </ul>
+                </ol>
             </div>
         </section>
 
         <section class="restaurants">
-            <div id="titre_resto">
+            <div>
                 <h2>Restaurants</h2>
             </div>
-            <article class="bloc_resto">
-                <div class="cartes1">
-                <a class="cartes_resto" href="la-palette-du-gout.html">
-                    <div class="image_carte">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image_palettegout">
-                    <span>Nouveau</span>
+            <article class="resto">
+                <div class="resto_cartes1">
+                <a class="resto_cartes" href="la-palette-du-gout.html">
+                    <div>
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="resto_image" alt="image_palettegout">
+                    <span class="resto_new">Nouveau</span>
                     </div>
+                    <div class="resto_texte">
                     <h3>La palette du goût</h3>
                     <p>Ménilmontant</p>
-                    <i class="far fa-heart"></i>
-                </a>
-                <a class="cartes_resto" href="la-note-enchantee.html">
-                    <div class="image_carte">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image_noteenchantée">
-                    <span>Nouveau</span>
                     </div>
+                    <div>
+                     <i class="far fa-heart resto_icon"></i>
+                    </div>
+                </a>
+                <a class="resto_cartes" href="la-note-enchantee.html">
+                    <div>
+                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="resto_image" alt="image_noteenchantée">
+                    <span class="resto_new">Nouveau</span>
+                    </div>
+                    <div class="resto_texte">
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
-                    <i class="far fa-heart"></i>
+                    </div>
+                    <i class="fas fa-heart resto_icon"></i>
                 </a>
                 </div>
-                <div class="cartes2">
-                <a class="cartes_resto" href="a-la-francaise.html">
-                    <div class="image_carte">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image_àlafrançaise">
+                <div class="resto_cartes2">
+                <a class="resto_cartes" href="a-la-francaise.html">
+                    <div>
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="resto_image" alt="image_àlafrançaise">
                     </div>
+                    <div class="resto_texte">
                     <h3>À la française</h3>
                     <p>Cité Rouge</p>
-                    <i class="far fa-heart"></i>
-                </a>
-                <a class="cartes_resto" href="le-delice-des-sens.html">
-                    <div class="image_carte">
-                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image_délicesens">
                     </div>
+                    <i class="fas fa-heart resto_icon"></i>
+                </a>
+                <a class="resto_cartes" href="le-delice-des-sens.html">
+                    <div>
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="resto_image" alt="image_délicesens">
+                    </div>
+                    <div class="resto_texte">
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
-                    <i class="far fa-heart"></i>
+                    </div>
+                    <i class="fas fa-heart resto_icon"></i>
                 </a>
                 </div>
             </article>
@@ -106,25 +112,25 @@
 
     <footer class="footer">
         <div id="footer_menu">
-            <h3 class="logo_footer">ohmyfood</h3>
+            <h3 class="footer_logo">ohmyfood</h3>
             <ul>
-                <li class="list_footer">
-                    <a href="#">
+                <li class="footer_list">
+                    <a href="#" class="footer_lien">
                         <i class="fas fa-utensils"></i>
                         Proposer un restaurant
                     </a>
                 </li>
-                <li class="list_footer">
-                    <a href="#">
+                <li class="footer_list">
+                    <a href="#" class="footer_lien">
                         <i class="fas fa-hands-helping"></i>
                         Devenir partenaire
                     </a>
                 </li>
-                <li class="list_footer">
-                    <a href="#">Mentions légales</a>
+                <li class="footer_list">
+                    <a href="#" class="footer_lien">Mentions légales</a>
                 </li>
-                <li class="list_footer">
-                    <a href="mailto:?to=ohmyfood@gmail.com">Contact</a>
+                <li class="footer_list">
+                    <a href="mailto:?to=ohmyfood@gmail.com" class="footer_lien">Contact</a>
                 </li>
             </ul>
         </div>

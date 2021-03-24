@@ -1,0 +1,89 @@
+.btnrecul_icon{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 1em;
+}
+
+.banniere_image{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.menu{
+    width: 94.7%;
+    background-color: #ecefed;
+    position: relative;
+    padding-left: 20px;
+    margin-top: -75px;
+    border-radius: 20px 20px 0px 0px;
+    h2{
+        font-family: 'Shrikhand', cursive;
+        padding-top: 20px;
+    }
+    &_icon{
+        position: absolute;
+        font-size: 27px;
+        margin-left: 300px;
+        margin-top: -55px;
+    }
+    &_item{
+        background-color: white;
+        width: 95%;
+        height: 60px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    h5{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    p{
+        font-weight: 300;
+        margin-top: -20px;
+        padding-left: 10px;
+    }
+    span{
+        position: absolute;
+        padding-left: 290px;
+        margin-top: -30px;
+    }
+    &_valid{
+        display: flex;
+        position: relative;
+        width: 50px;
+        height: 60px;
+        margin-top: -64px;
+        margin-left: 200px;
+        background-color: $color-tertiary;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 20px 20px 0px;
+        transition-duration: 0.5s;
+    }
+    &_icon2{
+        color: white;
+    }
+    &_commande{
+        display: flex;
+        text-decoration: none;
+        color: white;
+        justify-content: center;
+        padding: 50px;  
+    }
+    &_btncommande{
+        background-color: $color-primary;
+        color: white;
+        border: 0;
+        border-radius: 20px 20px 20px 20px;
+        padding: 10px;
+        width: 200px;
+        font-size: 1em;
+    }
+    &_btncommande:hover{
+        cursor: pointer;
+        background-color: $color-secondary;
+    }
+}
