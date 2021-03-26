@@ -26,18 +26,19 @@
     &_lien{
         width: 200px;
         height: 30px;
-        background-color: #686868;
-        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-        transition-duration: 0.35s;
+        background-color: $color-primary;
         text-decoration: none;
         color: white;
         padding-top: 10px;
         margin-bottom: 50px;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+        }
     &_lien:hover{
-        
-    }
+        background: linear-gradient(#ff79da, #9356dc);
+        -webkit-text-fill-color: text;
+        transition-duration: 0.5s;
+        box-shadow: 0.50rem 0.50rem 5px rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -79,7 +80,8 @@
         padding-left: 30px;
     }
     &_texte{
-        padding-left: 20px;
+        margin-left: 17px;
+        flex-wrap: wrap;
     }
 }
 
@@ -119,7 +121,7 @@
     }
     &_texte{
         position: relative;
-        margin-left: 10px;
+        left: 1em;
         margin-top: -10px;
     }
     &_texte p{
@@ -127,11 +129,25 @@
     }
     &_icon{
         position: absolute;
-        font-size: 27px;
-        margin-left: 270px;
-        margin-top: -45px;
+        font-size: 25px;
+        right: 1.7em;
     }
-    .fa-heart:hover{
-        color:$color-primary;
+    &_icon1{
+        position: absolute;
+        font-size: 25px;
+        margin-top: -40px;
+        right: 0.2em;
+    }
+    &_icon2{
+        position: absolute;
+        font-size: 25px;
+        margin-top: -40px;
+        right: 0.2em;
+    }
+    &_icon2:hover{
+        background: linear-gradient(50deg, #ff79da, #9356dc);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.3s;
     }
 }

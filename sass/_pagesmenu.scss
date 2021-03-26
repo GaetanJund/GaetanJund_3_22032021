@@ -14,7 +14,6 @@
 }
 
 .menu{
-    width: 94.7%;
     background-color: #ecefed;
     position: relative;
     padding-left: 20px;
@@ -24,11 +23,31 @@
         font-family: 'Shrikhand', cursive;
         padding-top: 20px;
     }
+    &_titre{
+        flex-wrap: wrap;
+    }
     &_icon{
         position: absolute;
-        font-size: 27px;
-        margin-left: 300px;
+        font-size: 25px;
+        right: 0.1em;
+    }
+    &_icon1{
+        position: absolute;
+        font-size: 25px;
         margin-top: -55px;
+        right: 0.1em;
+    }
+    &_icon2{
+        position: absolute;
+        font-size: 25px;
+        margin-top: -55px;
+        right: 0.1em;
+    }
+    &_icon2:hover{
+        background: linear-gradient(50deg, #ff79da, #9356dc);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.3s;
     }
     &_item{
         background-color: white;
@@ -47,7 +66,7 @@
     }
     span{
         position: absolute;
-        padding-left: 290px;
+        right: 2em;
         margin-top: -30px;
     }
     &_valid{
@@ -63,7 +82,7 @@
         border-radius: 0px 20px 20px 0px;
         transition-duration: 0.5s;
     }
-    &_icon2{
+    &_icon3{
         color: white;
     }
     &_commande{
@@ -84,6 +103,7 @@
     }
     &_btncommande:hover{
         cursor: pointer;
-        background-color: $color-secondary;
+        background: linear-gradient(0deg, #ff79da, #9356dc);
+        transition: 0.3s;
     }
 }
