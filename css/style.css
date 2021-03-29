@@ -59,11 +59,14 @@ p {
   position: relative;
   color: white;
 }
+.footer_list {
+  margin-bottom: 3px;
+  margin-left: -30px;
+}
 .footer_lien {
   list-style-type: none;
   text-decoration: none;
   color: white;
-  margin-left: -30px;
 }
 
 .fa-hands-helping {
@@ -129,7 +132,7 @@ p {
   counter-reset: listeCompte;
 }
 .tuto_list {
-  width: 100%;
+  width: 105%;
   height: 35px;
   margin-left: -35px;
   margin-bottom: 15px;
@@ -156,8 +159,16 @@ p {
   color: grey;
   padding-left: 30px;
 }
-.tuto_texte {
-  margin-left: 17px;
+.tuto_texte1 {
+  margin-left: 20px;
+  flex-wrap: wrap;
+}
+.tuto_texte2 {
+  margin-left: 13.5px;
+  flex-wrap: wrap;
+}
+.tuto_texte3 {
+  margin-left: 10px;
   flex-wrap: wrap;
 }
 
@@ -206,8 +217,7 @@ p {
 }
 .resto_icon {
   position: absolute;
-  font-size: 25px;
-  right: 1.7em;
+  right: 2.5em;
 }
 .resto_icon1 {
   position: absolute;
@@ -217,15 +227,17 @@ p {
 }
 .resto_icon2 {
   position: absolute;
-  font-size: 25px;
-  margin-top: -40px;
-  right: 0.2em;
+  font-size: 27px;
+  margin-top: -41px;
+  right: 0.16em;
+  opacity: 0;
 }
 .resto_icon2:hover {
   background: linear-gradient(50deg, #ff79da, #9356dc);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.3s;
+  transition-duration: 0.5s;
+  opacity: 1;
 }
 
 .btnrecul_icon {
@@ -270,15 +282,17 @@ p {
 }
 .menu_icon2 {
   position: absolute;
-  font-size: 25px;
+  font-size: 27px;
   margin-top: -55px;
-  right: 0.1em;
+  right: 0.05em;
+  opacity: 0;
 }
 .menu_icon2:hover {
   background: linear-gradient(50deg, #ff79da, #9356dc);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.3s;
+  transition: 0.5s;
+  opacity: 1;
 }
 .menu_item {
   background-color: white;
@@ -331,11 +345,13 @@ p {
   padding: 10px;
   width: 200px;
   font-size: 1em;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .menu_btncommande:hover {
   cursor: pointer;
   background: linear-gradient(0deg, #ff79da, #9356dc);
-  transition: 0.3s;
+  transition: 0.5s;
+  box-shadow: 0.5rem 0.5rem 5px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */
