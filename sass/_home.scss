@@ -22,6 +22,8 @@
     background-color: #fafafa;
     &_texte{
         margin-top: -15px;
+        font-size: 1em;
+        font-weight: 100;
     }
     &_lien{
         width: 200px;
@@ -82,14 +84,17 @@
     &_texte1{
         margin-left: 20px;
         flex-wrap: wrap;
+        font-weight: bold;
     }
     &_texte2{
         margin-left: 13.5px;
         flex-wrap: wrap;
+        font-weight: bold;
     }
     &_texte3{
         margin-left: 10px;
         flex-wrap: wrap;
+        font-weight: bold;
     }
 }
 
@@ -137,19 +142,18 @@
     }
     &_icon{
         position: absolute;
-        right: 2.5em;
+        right: 4em;
     }
     &_icon1{
         position: absolute;
         font-size: 25px;
-        margin-top: -40px;
-        right: 0.2em;
+        bottom: 0.5em;
     }
     &_icon2{
         position: absolute;
         font-size: 27px;
-        margin-top: -41px;
-        right: 0.16em;
+        margin-left: -1px;
+        bottom: 0.4em;
         opacity: 0;
     }
     &_icon2:hover{
@@ -158,5 +162,11 @@
         -webkit-text-fill-color: transparent;
         transition-duration: 0.5s;
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .tuto_btn{
+        display: flex;
     }
 }
