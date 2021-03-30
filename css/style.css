@@ -140,9 +140,10 @@ p {
   margin-bottom: 50px;
 }
 .tuto_btn {
-  width: 100%;
+  display: flex;
 }
 .tuto_case {
+  width: 100%;
   counter-reset: listeCompte;
 }
 .tuto_list {
@@ -224,17 +225,24 @@ p {
   margin-top: 10px;
   border-radius: 5px 5px 5px 5px;
 }
+.resto_contenu {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
 .resto_texte {
   position: relative;
-  left: 1em;
+  left: 15px;
   margin-top: -10px;
 }
 .resto_texte p {
   margin-top: -10px;
 }
 .resto_icon {
-  position: absolute;
-  right: 4em;
+  display: flex;
+  position: relative;
+  padding-bottom: 65px;
+  right: 40px;
 }
 .resto_icon1 {
   position: absolute;
@@ -256,9 +264,35 @@ p {
   opacity: 1;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .tuto_btn {
+    margin-left: -50px;
+  }
+
+  .tuto_case {
     display: flex;
+  }
+
+  .tuto_list {
+    margin-left: 15px;
+  }
+
+  .resto_cartes1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .resto_cartes2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .resto_cartes {
+    width: 45%;
   }
 }
 .btnrecul_icon {
@@ -340,25 +374,28 @@ p {
   margin-top: -27px;
   padding-left: 10px;
 }
-.menu span {
-  position: absolute;
-  right: 2em;
+.menu_prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 10px;
   margin-top: -35px;
 }
 .menu_valid {
   display: flex;
-  position: relative;
   width: 50px;
   height: 60px;
-  margin-top: -65.5px;
-  margin-left: 200px;
+  margin-top: -50px;
   background-color: #99E2D0;
   align-items: center;
   justify-content: center;
   border-radius: 0px 20px 20px 0px;
   transition-duration: 0.5s;
 }
-.menu_icon3 {
+.menu_validicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 .menu_commande {
@@ -385,7 +422,7 @@ p {
   box-shadow: 0.5rem 0.5rem 5px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .menu_intro {
     display: flex;
     justify-content: space-evenly;

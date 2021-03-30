@@ -48,9 +48,10 @@
     margin-left: 25px;
     margin-bottom: 50px;
     &_btn{
-        width: 100%;
+        display: flex;
     }
     &_case{
+        width: 100%;
         counter-reset: listeCompte;
     }
     &_list{
@@ -132,17 +133,24 @@
         margin-top: 10px;
         border-radius: 5px 5px 5px 5px;
     }
+    &_contenu{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
     &_texte{
         position: relative;
-        left: 1em;
+        left: 15px;
         margin-top: -10px;
     }
     &_texte p{
         margin-top: -10px;
     }
     &_icon{
-        position: absolute;
-        right: 4em;
+        display: flex;
+        position: relative;
+        padding-bottom: 65px;
+        right: 40px;
     }
     &_icon1{
         position: absolute;
@@ -165,8 +173,29 @@
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1024px){
     .tuto_btn{
+        margin-left: -50px;
+    }
+    .tuto_case{
         display: flex;
+    }
+    .tuto_list{
+        margin-left: 15px;
+    }
+    .resto_cartes1{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .resto_cartes2{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .resto_cartes{
+        width: 45%;
     }
 }
