@@ -1,10 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-@keyframes itemAppear {
-  0% {
-    transform: scale(0);
+@keyframes introApparition {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes left {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+@keyframes loader {
   100% {
-    transform: scale(1);
+    opacity: 0;
+    z-index: -10;
   }
 }
 body {
@@ -89,6 +105,41 @@ p {
   margin-right: 12px;
 }
 
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f3f3f3;
+  animation: loader 0.01s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
+.loader_contenu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 75px;
+}
+.loader_1 {
+  color: #9356DC;
+  animation: left 2s;
+}
+.loader_2 {
+  color: #FF79DA;
+  animation: left 1.5s;
+}
+.loader_3 {
+  color: #1C799D;
+  animation: left 1s;
+}
+.loader_4 {
+  color: #99E2D0;
+  animation: left 0.5s;
+}
+
 .localisation {
   font-family: "Roboto-Bold", sans-serif;
   display: flex;
@@ -99,7 +150,7 @@ p {
   padding: 20px;
 }
 .localisation_icon {
-  margin-right: 5px;
+  margin-right: 15px;
 }
 .localisationtexte {
   font-weight: 500;
@@ -147,7 +198,7 @@ p {
   counter-reset: listeCompte;
 }
 .tuto_list {
-  width: 105%;
+  width: 100%;
   height: 35px;
   margin-left: -35px;
   margin-bottom: 15px;
@@ -166,26 +217,33 @@ p {
   justify-content: center;
   height: 20px;
   width: 20px;
+  margin-left: -9px;
   position: absolute;
-  left: 20px;
   border-radius: 20px 20px 20px 20px;
+}
+.tuto_color {
+  background-color: #FEE7FF;
+}
+.tuto_list:hover {
+  cursor: pointer;
+  box-shadow: 0.5rem 0.5rem 5px rgba(0, 0, 0, 0.25);
 }
 .tuto_icon {
   color: grey;
   padding-left: 30px;
 }
 .tuto_texte1 {
-  margin-left: 20px;
+  margin-left: 15px;
   flex-wrap: wrap;
   font-weight: bold;
 }
 .tuto_texte2 {
-  margin-left: 13.5px;
+  margin-left: 9.5px;
   flex-wrap: wrap;
   font-weight: bold;
 }
 .tuto_texte3 {
-  margin-left: 10px;
+  margin-left: 6.5px;
   flex-wrap: wrap;
   font-weight: bold;
 }
@@ -327,7 +385,7 @@ p {
 .menu_icon {
   position: absolute;
   font-size: 25px;
-  right: 0.1em;
+  right: 0.5em;
 }
 .menu_icon1 {
   position: absolute;
@@ -350,13 +408,22 @@ p {
   transition: 0.5s;
   opacity: 1;
 }
+.menu_intro1 {
+  animation: introApparition 0.5s;
+  animation-timing-function: ease-out;
+}
+.menu_intro2 {
+  animation: introApparition 1.5s;
+  animation-timing-function: ease-out;
+}
+.menu_intro3 {
+  animation: introApparition 2.5s;
+  animation-timing-function: ease-out;
+}
 .menu_bulle {
   cursor: pointer;
   max-width: 100%;
   margin-bottom: -15px;
-  animation: itemAppear 0.8s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
 }
 .menu_item {
   background-color: white;
@@ -423,7 +490,7 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
-  .menu_intro {
+  .menu_intro1, .menu_intro2, .menu_intro3 {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
