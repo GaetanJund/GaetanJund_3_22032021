@@ -59,8 +59,7 @@ h4 {
   font-weight: 300;
   border-bottom: 2px solid #99E2D0;
   width: 11%;
-  margin-top: 50px;
-  margin-bottom: -15px;
+  margin-top: 40px;
 }
 
 h5 {
@@ -234,7 +233,6 @@ p {
 }
 .tuto_texte1 {
   margin-left: 15px;
-  flex-wrap: wrap;
   font-weight: bold;
 }
 .tuto_texte2 {
@@ -420,51 +418,6 @@ p {
   animation: introApparition 2.5s;
   animation-timing-function: ease-out;
 }
-.menu_bulle {
-  cursor: pointer;
-  max-width: 100%;
-  margin-bottom: -15px;
-}
-.menu_item {
-  background-color: white;
-  width: 95%;
-  height: 60px;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 1px 1px 10px #bebbbb;
-}
-.menu h5 {
-  padding-top: 10px;
-  padding-left: 10px;
-}
-.menu p {
-  font-weight: 300;
-  margin-top: -27px;
-  padding-left: 10px;
-}
-.menu_prix {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: 10px;
-  margin-top: -35px;
-}
-.menu_valid {
-  display: flex;
-  width: 50px;
-  height: 60px;
-  margin-top: -50px;
-  background-color: #99E2D0;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0px 20px 20px 0px;
-  transition-duration: 0.5s;
-}
-.menu_validicon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
 .menu_commande {
   display: flex;
   text-decoration: none;
@@ -489,15 +442,81 @@ p {
   box-shadow: 0.5rem 0.5rem 5px rgba(0, 0, 0, 0.25);
 }
 
+.menu_item {
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  width: 95%;
+  height: 60px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 10px #bebbbb;
+}
+.menu_item-texte {
+  margin-top: -30px;
+  overflow: hidden;
+}
+.menu_item h5 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.menu_item p {
+  font-weight: 300;
+  margin-top: -27px;
+  padding-left: 10px;
+}
+.menu_item-prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 10px;
+  margin-top: -35px;
+}
+.menu_item-valid {
+  display: flex;
+  position: relative;
+  width: 50px;
+  height: 60px;
+  margin-top: -49.3px;
+  left: 380px;
+  background-color: #99E2D0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 20px 20px 0px;
+  transition-duration: 0.5s;
+}
+.menu_item:hover .menu_item-valid {
+  left: 288px;
+}
+.menu_item-validicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.menu_item:hover .menu_item-validicon {
+  transform: rotate(0deg);
+}
+
 @media screen and (min-width: 1024px) {
   .menu_intro1, .menu_intro2, .menu_intro3 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 50px;
   }
 
-  .menu_bulle {
-    width: 50%;
+  .menu_desktop {
+    width: 100%;
+  }
+
+  .menu_item {
+    width: 350px;
+  }
+  .menu_item:hover .menu_item-valid {
+    left: 300px;
   }
 
   h4 {
