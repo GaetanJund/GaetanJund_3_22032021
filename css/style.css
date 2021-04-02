@@ -314,7 +314,7 @@ p {
 }
 .resto_icon2:hover {
   background: linear-gradient(50deg, #ff79da, #9356dc);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-duration: 0.5s;
   opacity: 1;
@@ -403,7 +403,7 @@ p {
 }
 .menu_icon2:hover {
   background: linear-gradient(50deg, #ff79da, #9356dc);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: 0.5s;
