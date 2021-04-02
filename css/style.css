@@ -45,7 +45,7 @@ h1 {
 
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 h3 {
@@ -369,9 +369,11 @@ p {
 .menu {
   background-color: #ecefed;
   position: relative;
+  padding-right: 20px;
   padding-left: 20px;
   margin-top: -75px;
   border-radius: 20px 20px 0px 0px;
+  max-width: 100%;
 }
 .menu h2 {
   font-family: "Shrikhand", cursive;
@@ -379,6 +381,7 @@ p {
 }
 .menu_titre {
   flex-wrap: wrap;
+  flex: 1;
 }
 .menu_icon {
   position: absolute;
@@ -395,7 +398,7 @@ p {
   position: absolute;
   font-size: 27px;
   margin-top: -55px;
-  right: 0.05em;
+  right: 1px;
   opacity: 0;
 }
 .menu_icon2:hover {
@@ -407,15 +410,15 @@ p {
   opacity: 1;
 }
 .menu_intro1 {
-  animation: introApparition 0.5s;
+  animation: introApparition 0.3s;
   animation-timing-function: ease-out;
 }
 .menu_intro2 {
-  animation: introApparition 1.5s;
+  animation: introApparition 1.3s;
   animation-timing-function: ease-out;
 }
 .menu_intro3 {
-  animation: introApparition 2.5s;
+  animation: introApparition 2.3s;
   animation-timing-function: ease-out;
 }
 .menu_commande {
@@ -442,85 +445,97 @@ p {
   box-shadow: 0.5rem 0.5rem 5px rgba(0, 0, 0, 0.25);
 }
 
-.menu_item {
-  cursor: pointer;
-  overflow: hidden;
+.menu_bulle {
+  display: grid;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 40px;
   max-width: 100%;
-  margin-top: 10px;
-  background-color: white;
-  width: 95%;
-  height: 60px;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 1px 1px 10px #bebbbb;
 }
-.menu_item-texte {
-  margin-top: -30px;
+
+.menu_item, .menu_item1 {
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+  width: 100%;
+  height: 38px;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #bebbbb;
+  max-width: 100%;
+}
+.menu_item-texte, .menu_item1-texte {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.menu_item h5, .menu_item1 h5 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu_item h5 {
-  padding-top: 10px;
-  padding-left: 10px;
+.menu_item p, .menu_item1 p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu_item p {
-  font-weight: 300;
-  margin-top: -27px;
-  padding-left: 10px;
-}
-.menu_item-prix {
+.menu_item-prix, .menu_item1-prix {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 10px;
-  margin-top: -35px;
+  padding-left: 10px;
 }
-.menu_item-valid {
+.menu_item-valid, .menu_item1-valid {
   display: flex;
-  position: relative;
-  width: 50px;
-  height: 60px;
-  margin-top: -49.3px;
-  left: 380px;
+  width: 60px;
   background-color: #99E2D0;
+  margin: -16px -80px -16px 16px;
   align-items: center;
   justify-content: center;
-  border-radius: 0px 20px 20px 0px;
   transition-duration: 0.5s;
 }
-.menu_item:hover .menu_item-valid {
-  left: 288px;
+.menu_item:hover .menu_item-valid, .menu_item:hover .menu_item1-valid, .menu_item1:hover .menu_item-valid, .menu_item1:hover .menu_item1-valid {
+  margin-right: -16px;
 }
-.menu_item-validicon {
+.menu_item-validicon, .menu_item1-validicon {
+  height: 20px;
+  width: 20px;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  transform: rotate(180deg);
+  border-radius: 50px;
+  transform: rotate(-720deg);
   transition-duration: 0.5s;
 }
-.menu_item:hover .menu_item-validicon {
-  transform: rotate(0deg);
+.menu_item:hover .menu_item-validicon, .menu_item:hover .menu_item1-validicon, .menu_item1:hover .menu_item-validicon, .menu_item1:hover .menu_item1-validicon {
+  transform: rotate(0);
+}
+.menu_item-icon3, .menu_item1-icon3 {
+  color: #99E2D0;
 }
 
 @media screen and (min-width: 1024px) {
   .menu_intro1, .menu_intro2, .menu_intro3 {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
-
-  .menu_desktop {
-    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
   }
 
   .menu_item {
-    width: 350px;
+    width: 230px;
   }
-  .menu_item:hover .menu_item-valid {
-    left: 300px;
+
+  .menu_item1 {
+    width: 150px !important;
   }
 
   h4 {
-    width: 11%;
+    width: 50px;
     margin-right: 15px;
   }
 }

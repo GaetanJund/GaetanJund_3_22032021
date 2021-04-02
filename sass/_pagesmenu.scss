@@ -16,15 +16,18 @@
 .menu{
     background-color: #ecefed;
     position: relative;
+    padding-right: 20px;
     padding-left: 20px;
     margin-top: -75px;
     border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
     h2{
         font-family: 'Shrikhand', cursive;
         padding-top: 20px;
     }
     &_titre{
         flex-wrap: wrap;
+        flex: 1;
     }
     &_icon{
         position: absolute;
@@ -41,7 +44,7 @@
         position: absolute;
         font-size: 27px;
         margin-top: -55px;
-        right: 0.05em;
+        right: 1px;
         opacity: 0;
     }
     &_icon2:hover{
@@ -53,15 +56,15 @@
         opacity: 1;
     }
     &_intro1{
-        animation: introApparition 0.5s;
+        animation: introApparition 0.3s;
         animation-timing-function: ease-out;
     }
     &_intro2{
-        animation: introApparition 1.5s;
+        animation: introApparition 1.3s;
         animation-timing-function: ease-out;
     }
     &_intro3{
-        animation: introApparition 2.5s;
+        animation: introApparition 2.3s;
         animation-timing-function: ease-out;
     }
     &_commande{
@@ -89,83 +92,94 @@
     }
 }
 
-.menu_item{
-    cursor: pointer;
-    overflow: hidden;
+.menu_bulle{
+    display: grid;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
     max-width: 100%;
-    margin-top: 10px;
+}
+
+.menu_item, .menu_item1{
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
     background-color: white;
-    width: 95%;
-    height: 60px;
-    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    height: 38px;
+    padding: 16px;
+    border-radius: 20px;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+    max-width: 100%;
     &-texte{
-        margin-top: -30px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         overflow: hidden;
+        flex: 1;
     }
     h5{
-        padding-top: 10px;
-        padding-left: 10px;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     p{
-        font-weight: 300;
-        margin-top: -27px;
-        padding-left: 10px;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &-prix{
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        padding-right: 10px;
-        margin-top: -35px;
+        padding-left: 10px;
     }
     &-valid{
         display: flex;
-        position: relative;
-        width: 50px;
-        height: 60px;
-        margin-top: -49.3px;
-        left: 380px;
+        width: 60px;
         background-color: $color-tertiary;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0px 20px 20px 0px;
+        margin: -16px -80px -16px 16px;
+        align-items:center;
+        justify-content:center;
         transition-duration: 0.5s;
     }
     &:hover &-valid{
-        left: 288px;
+        margin-right: -16px;
     }
     &-validicon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        transform: rotate(180deg);
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 50px;
+        transform: rotate(-720deg);
         transition-duration: 0.5s;
     }
     &:hover &-validicon{
-        transform: rotate(0deg);
+        transform: rotate(0);
+    }
+    &-icon3{
+        color: $color-tertiary;
     }
 }
-
 
 @media screen and (min-width: 1024px){
     .menu_intro1, .menu_intro2, .menu_intro3{
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-    .menu_desktop{
-        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
     }
     .menu_item{
-        width: 350px;
-        &:hover &-valid{
-            left: 300px;
-        }
+        width: 230px;
+    }
+    .menu_item1{
+        width: 150px !important;
     }
     h4{
-        width: 11%;
-       margin-right: 15px; 
+        width: 50px;
+        margin-right: 15px;
     }
 }
